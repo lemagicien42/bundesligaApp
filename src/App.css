@@ -41,7 +41,12 @@ input {
   margin: 10px;
   border-radius: 5px;
   background-color: #d9080cb4;
-  color: white;
+  color: black;
+}
+.inputStyle input::placeholder {
+  color: #0f010d; 
+  font-size: 0.9em; 
+  font-style: italic;
 }
 
 .buttonStyle {
@@ -60,7 +65,7 @@ input {
   background-color: #ff6464;
 }
 p {
-  color: white;
+  color: rgb(41, 2, 2);
   border-radius: 5px;
   width: 250px;
 
@@ -69,13 +74,12 @@ p {
 }
 
 .result {
-  
   border-radius: 5px;
   padding: 15px;
   white-space: pre-line;
   font-size: 18px;
   font-style: normal;
-
+color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .logo {
@@ -85,7 +89,9 @@ p {
   animation: rotate 2s;
   transition: transform 0.2s;
 }
-
+.result.output {
+  background-color:#d9080d;
+}
 .header {
   display: flex;
   align-items: center;

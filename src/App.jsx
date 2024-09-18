@@ -6,6 +6,7 @@ export default function App() {
   const [team1, setTeam1] = useState("");
   const [team2, setTeam2] = useState("");
   const [result, setResult] = useState("");
+  const [showResult, setShowResult] = useState(false);
 
   useEffect(() => {
     fetch("https://api.openligadb.de/getmatchdata/bl1/2024")
@@ -37,8 +38,10 @@ export default function App() {
           das Spiel findet bei ${homeTeam} statt\n
           ${homeTeam} vs ${awayTeam}\n
           Score: ${score}`);
+          setShowResult(true);
       } else {
         setResult(" No match");
+        setShowResult(false);
       }
     }
   };
@@ -66,7 +69,7 @@ export default function App() {
           Search
         </button>
       </div>
-      <p className="result">{result}</p>
+      <p className={`result ${showResult ? 'output' : ''}`}>{result}</p>
     </>
   );
 }
