@@ -1,8 +1,11 @@
-
-body{
+body {
   background-color: black;
 }
 #root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,24 +42,40 @@ hover {
 .read-the-docs {
   color: #888;
 }
-h1{
-  
-}
-.inputStyle{
-  padding: 100px;
 
+.inputStyle {
+  padding: 100px;
 }
 input {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
 }
+
 button {
-color: #c8102e;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.2em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
 }
-p{
-  display: flex;
+p {
   background-color: aqua;
-border-radius: 5px; 
- 
+  border-radius: 5px;
+  width: 250px;
+
+  text-align: center;
+  margin: auto;
+  
+}
+
+.result {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  white-space: pre-line;
 }
