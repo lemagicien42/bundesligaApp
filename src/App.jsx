@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import logo from "./assets/bundesliga-2.svg"
 
 export default function App() {
   const [matches, setMatches] = useState([]);
@@ -50,7 +51,7 @@ export default function App() {
     <>
       <div className="header">
         <h1>Bundesliga Match Finder </h1>
-        <img src="./src/assets/bundesliga-2.svg" alt="" className="logo" />
+        <img src={logo} alt="" className="logo" />
       </div>
       <div className="inputStyle">
         <input
