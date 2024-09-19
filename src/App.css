@@ -90,7 +90,8 @@ color: white;
   transition: transform 0.2s;
 }
 .result.output {
-  background-color:#d9080d;
+  background-color:#d9080cab;
+  box-shadow: 10px 10px 5px 17px rgba(0,0,0,0.63);
 }
 .header {
   display: flex;
