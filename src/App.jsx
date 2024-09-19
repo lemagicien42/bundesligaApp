@@ -50,7 +50,7 @@ export default function App() {
     <>
       <div className="header">
         <h1>Bundesliga Match Finder </h1>
-        <img src="/public/bundesliga-seeklogo.svg" alt="" className="logo" />
+        <img src="./src/assets/bundesliga-2.svg" alt="" className="logo" />
       </div>
       <div className="inputStyle">
         <input
